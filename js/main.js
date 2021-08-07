@@ -12,7 +12,7 @@ function initElement(e) {
   earr.forEach((item, i) => {
     item.style.display = "none";
   });
-  if (pass.value !== "ceci") earr[c % 3].style.display = "block";
+  if (!["ceci", "Ceci"].includes(pass.value)) earr[c % 3].style.display = "block";
   else {
     answer.style.display = "block";
   }
